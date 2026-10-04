@@ -2,8 +2,6 @@
 
 A bachelor-thesis project comparing RR-interval baselines with contrastive representations of paired ECG windows. The main task is binary classification of normal rhythm and atrial fibrillation (AFib) using the PhysioNet/CinC 2017 dataset.
 
-The implementation provides shared preprocessing, reusable models, configuration-driven experiments, recording-level data splits, and a consistent evaluation pipeline. Notebooks explain and inspect the experiments; model and training code lives in the Python package.
-
 ## Research overview
 
 ```mermaid
