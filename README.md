@@ -19,7 +19,7 @@ flowchart TD
 
 Two views from one recording form a positive contrastive pair. The encoder uses a symmetric NT-Xent objective; a separate supervised classifier can learn from the embeddings. A normal-only experiment uses paired-embedding dissimilarity as its AFib-oriented score. The 50- and 100-frequency variants share the same CNN implementation.
 
-The dataset has other rhythm and noisy-record classes, but these experiments use the normal/AFib subset. Exploratory MIMIC-IV and Icentia11k work is documented separately in the [dataset-selection notebook](notebooks/00_dataset_exploration.ipynb).
+The dataset has other rhythm and noisy-record classes, but these experiments use the normal/AFib subset.
 
 ## Prepare one cohort and one split
 
