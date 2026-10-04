@@ -70,20 +70,4 @@ jupyter lab
 
 Comparison rejects mismatched cohorts or splits. Raw recordings, feature caches, model weights, and local runs are excluded from Git.
 
-## Notebooks and source layout
-
-| Location | Responsibility |
-| --- | --- |
-| [00_dataset_exploration.ipynb](notebooks/00_dataset_exploration.ipynb) | Dataset selection, metadata inspection, and signal spectrum |
-| [01_data_preparation.ipynb](notebooks/01_data_preparation.ipynb) | One preparation workflow for RR and wavelet representations |
-| [02_rr_baselines.ipynb](notebooks/02_rr_baselines.ipynb) | KPCA, SVM, and autoencoder presets |
-| [03_contrastive_learning.ipynb](notebooks/03_contrastive_learning.ipynb) | Synthetic mechanism demonstration and RR contrastive experiment |
-| [04_wavelet_experiments.ipynb](notebooks/04_wavelet_experiments.ipynb) | Shared 50/100-frequency and normal-only experiments |
-| [05_results_analysis.ipynb](notebooks/05_results_analysis.ipynb) | Consistent comparison, ROC curves, and confusion matrices |
-| `src/ecg_afib/` | Shared data, features, models, training, evaluation, plotting, and CLI |
-| `configs/` | Eight readable TOML experiment presets |
-| `tests/` | Data/evaluation regressions and optional neural integration tests |
-| `docs/` | Method, data contract, migration map, validation, and publication instructions |
-
-Notebooks default to inspection mode. Their explicit run switches prevent opening the project from launching preprocessing or training automatically. All notebook computations use the shared package.
 
