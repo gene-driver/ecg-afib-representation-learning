@@ -1,0 +1,25 @@
+# rr_contrastive: settings for the consolidated implementation, not a recovered historical run.
+name = "rr_contrastive"
+method = "contrastive"
+seed = 42
+
+[paths]
+dataset = "data/processed/rr15"
+splits = "data/splits.json"
+output = "runs/rr_contrastive"
+
+[training]
+epochs = 20
+classifier_epochs = 25
+batch_size = 16
+learning_rate = 0.01
+classifier_learning_rate = 0.001
+temperature = 0.1
+balance_classifier = true
+device = "cpu"
+
+[model]
+embedding_dim = 2
+hidden_dims = [13, 8, 5]
+classifier_hidden = []
+standardize = false

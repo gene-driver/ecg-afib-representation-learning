@@ -1,0 +1,24 @@
+# wavelet_normal_only: settings for the consolidated implementation, not a recovered historical run.
+name = "wavelet_normal_only"
+method = "one_class"
+seed = 42
+
+[paths]
+dataset = "data/processed/wavelet50"
+splits = "data/splits.json"
+output = "runs/wavelet_normal_only"
+
+[training]
+epochs = 9
+classifier_epochs = 25
+batch_size = 8
+learning_rate = 0.001
+classifier_learning_rate = 0.001
+temperature = 0.1
+balance_classifier = true
+device = "cpu"
+
+[model]
+embedding_dim = 128
+normal_only = true
+standardize = false

@@ -1,0 +1,25 @@
+# rr_autoencoder: settings for the consolidated implementation, not a recovered historical run.
+name = "rr_autoencoder"
+method = "autoencoder"
+seed = 42
+
+[paths]
+dataset = "data/processed/rr15"
+splits = "data/splits.json"
+output = "runs/rr_autoencoder"
+
+[training]
+epochs = 30
+classifier_epochs = 25
+batch_size = 16
+learning_rate = 0.001
+classifier_learning_rate = 0.001
+temperature = 0.1
+balance_classifier = true
+device = "cpu"
+
+[model]
+embedding_dim = 2
+autoencoder_hidden = [10, 5]
+normal_only = false
+standardize = false

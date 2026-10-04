@@ -1,0 +1,24 @@
+# wavelet_contrastive_100: settings for the consolidated implementation, not a recovered historical run.
+name = "wavelet_contrastive_100"
+method = "contrastive"
+seed = 42
+
+[paths]
+dataset = "data/processed/wavelet100"
+splits = "data/splits.json"
+output = "runs/wavelet_contrastive_100"
+
+[training]
+epochs = 6
+classifier_epochs = 25
+batch_size = 8
+learning_rate = 0.001
+classifier_learning_rate = 0.001
+temperature = 0.1
+balance_classifier = true
+device = "cpu"
+
+[model]
+embedding_dim = 128
+classifier_hidden = [64]
+standardize = false

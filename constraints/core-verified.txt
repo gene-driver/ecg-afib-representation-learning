@@ -1,0 +1,7 @@
+# Numerical environment used for local core tests on Python 3.12.
+# Optional neural/signal dependencies are not locked by this file.
+numpy==2.3.5
+scipy==1.17.0
+scikit-learn==1.8.0
+joblib==1.5.3
+threadpoolctl==3.6.0
